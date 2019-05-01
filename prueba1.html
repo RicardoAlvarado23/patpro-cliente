@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Inicio css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Fin css -->
+    <title>Prueba 1</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Prueba Caso 1</h1>
+        <p><b>Historia de Usuario 1:</b> “Como administrador quiero poder generar reportes de productos más vendidos”.</p>
+        <div class="row">
+            <div class="col">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Generación de reporte</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Filtros de búsqueda</h6>
+                        <div class="row">
+                            <div class="col-5 col-xs-12">
+                                <div class="form-group">
+                                    <label for="selectCategoría">Categoría</label>
+                                    <select class="form-control form-control-sm" id="selectCategoría">
+                                        <option selected>Seleccione</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="txtNombreProducto">Nombre Producto</label>
+                                    <input type="text" class="form-control form-control-sm" id="txtNombreProducto" aria-describedby="emailHelp" placeholder="Nombre Producto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="rPrecios" class="w-100">Rango Precios</label>
+                                    <b class="mr-2" id="minValue">S./ 0</b> <input id="rPrecios" type="text" class="form-control form-control-sm" value="" data-slider-min="0" data-slider-max="20000" data-slider-step="5" data-slider-value="[0,20000]" />
+                                    <b class="ml-2" id="maxValue">S/. 20000</b>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="form-group">
+                                    <label for="rFechas">Fecha Venta</label>
+                                    <div id="reportrange" class="form-control form-control-sm" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                                        <i class="fa fa-calendar"></i>&nbsp;
+                                        <span></span> <i class="fa fa-caret-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="selectFormatos">Formato Exportación</label>
+                                    <select class="form-control form-control-sm" id="selectFormatos">
+                                            <option selected>Seleccione</option>
+                                            <option value="1">PDF</option>
+                                            <option value="2">XLS</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <a href="#" class="card-link">Previsualizar</a>
+                            <a href="#" class="card-link">Generar Reporte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Inicio librerias scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="./assets/js/prueba1.js"></script>
+    <!-- Fin librerias scripts -->
+</body>
+
+</html>
