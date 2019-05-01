@@ -1,0 +1,16 @@
+{
+  "name": "patpro",
+  "version": "1.0.0",
+  "description": "Proyecto patpro",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Alvarado Aponte y un poquito Jecri",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper": "^1.0.1"
+  }
+}
